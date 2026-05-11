@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./rest.css">
     <script src="./app.js" defer></script>
+
+    <!-- link para as fonts de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,13 +24,32 @@
 
     <main>
         <div class="inputbox">
-            <input type="text" id="buscar" placeholder="insira o nome do digimon ou seu ID">
+            <input type="text" id="buscar" placeholder="insira o nome do digimon ou seu ID" required>
             <button>buscar</button>
         </div>
         <div class=" containerSecao">
             <div class="secao" id="secao1"><span>digimon</span></div>
             <div class="secao" id="secao2"><span>fields</span></div>
             <div class="secao" id="secao3"><span>descrição</span></div>
+        </div>
+
+        <div class="containerDigimon">
+            <div class="digimonBackground">
+                <div class="infoDigimon" id="infoDigimon">
+                    <div class="imagem">
+                        <span id="numeroDigimon">83</span>
+                        <div class="fotoDigimon" id="fotoDigimon"></div>
+                    </div>
+                    <div class="atributos">
+                        <h3>tailmon</h3>
+                        <p><span>level: </span> adultChild</p>
+                        <p><span>attributes: </span>freeVaccine</p>
+                        <p><span>type: </span> Holy Beast</p>
+                        <p><span>level: </span> <span>1998</span></p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
