@@ -66,20 +66,19 @@ async function preencherDigimon() {
     document.getElementById('containerDigimon').style.display = 'flex'
 
     // id
-    document.getElementById('numeroDigimon').textContent = dadosDigimon.id
+    document.getElementById('numeroDigimon').textContent = dadosDigimon.id || 'Nâo encontrado'
 
     // nome
-    document.getElementById('nomeDigimon').textContent = dadosDigimon.name
+    document.getElementById('nomeDigimon').textContent = dadosDigimon.name || 'Nâo encontrado'
 
     // level
-    document.getElementById('level').textContent =
-        dadosDigimon.levels[0].level
+    document.getElementById('level').textContent = dadosDigimon.levels[0]?.level || 'Nâo encontrado'
 
     // attributes
-    document.getElementById('attributes').textContent = dadosDigimon.attributes[0].attribute
+    document.getElementById('attributes').textContent = dadosDigimon.attributes[0]?.attribute || 'Nâo encontrado'
 
     // type
-    document.getElementById('type').textContent = dadosDigimon.types[0].type
+    document.getElementById('type').textContent = dadosDigimon.types[0]?.type || 'Nâo encontrado'
 
     // release
     document.getElementById('release').textContent = dadosDigimon.releaseDate
