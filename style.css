@@ -23,10 +23,9 @@ h1 {
   font-family: 'Inter', sans-serif;
 }
 
-
 main {
   background-color: #0F172A;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -70,9 +69,8 @@ button {
   height: 35px;
   border-radius: 20px;
   margin-right: 16px;
-
   cursor: pointer;
-  transition: 0.3;
+  transition: .3s;
   font-family: 'Inter', sans-serif;
 }
 
@@ -89,7 +87,7 @@ button {
 }
 
 .containerDigimon {
-  display: flex;
+  display: none;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -98,14 +96,11 @@ button {
 }
 
 .digimonBackground {
-  display: flex;
-
   background: #1E293B;
   border-radius: 21px;
   width: 479px;
-  height: 274px;
+  min-height: 274px;
   margin-left: -60px;
-
 }
 
 .infoDigimon {
@@ -117,11 +112,9 @@ button {
 .imagem {
   display: flex;
   flex-direction: column;
-  height: auto;
   width: 220px;
   margin-left: 36px;
   align-items: center;
-
 }
 
 .imagem span {
@@ -136,29 +129,84 @@ button {
   width: 201px;
   margin-top: 17px;
 }
-.fotoDigimon img{
+
+.fotoDigimon img {
   width: 100%;
   height: 100%;
   border-radius: 15px;
 }
 
-.atributos{
+.atributos {
   color: white;
   margin-top: 52px;
   margin-left: 15px;
-
   display: flex;
   flex-direction: column;
   gap: 13px;
   font-family: 'Inter', sans-serif;
-
 }
+
 .atributos h3 {
   font-size: 24px;
 }
+
 .atributos p {
   font-size: 16px;
 }
+
 .atributos p span {
   font-weight: bold;
+}
+
+.aba {
+  display: none;
+}
+
+.aba.ativaConteudo {
+  display: flex;
+}
+
+.fieldsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 70px;
+  flex-wrap: wrap;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.field img {
+  width: 70px;
+  height: 70px;
+}
+
+.descricaoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.descricaoContainer h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.descricaoContainer p {
+  width: 340px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
 }

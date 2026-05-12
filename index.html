@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DigiDex</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./rest.css">
+
     <script src="./app.js" defer></script>
 
     <!-- link para as fonts de texto -->
@@ -15,6 +17,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="cabecalho">
             <img src="img/Polygon 1.png" alt="poligono">
@@ -23,34 +26,95 @@
     </header>
 
     <main>
+
         <div class="inputbox">
             <input type="text" id="buscar" placeholder="insira o nome do digimon ou seu ID" required>
             <button>buscar</button>
         </div>
-        <div class=" containerSecao">
-            <div class="secao" id="secao1"><span>digimon</span></div>
-            <div class="secao" id="secao2"><span>fields</span></div>
-            <div class="secao" id="secao3"><span>descrição</span></div>
-        </div>
 
-        <div class="containerDigimon">
-            <div class="digimonBackground">
-                <div class="infoDigimon" id="infoDigimon">
-                    <div class="imagem">
-                        <span id="numeroDigimon">83</span>
-                        <div class="fotoDigimon" id="fotoDigimon"></div>
-                    </div>
-                    <div class="atributos">
-                        <h3>tailmon</h3>
-                        <p><span>level: </span> adultChild</p>
-                        <p><span>attributes: </span>freeVaccine</p>
-                        <p><span>type: </span> Holy Beast</p>
-                        <p><span>level: </span> <span>1998</span></p>
-                    </div>
-                </div>
+        <div class="containerSecao">
+
+            <div class="secao ativa" id="secao1">
+                <span>digimon</span>
+            </div>
+
+            <div class="secao" id="secao2">
+                <span>fields</span>
+            </div>
+
+            <div class="secao" id="secao3">
+                <span>descrição</span>
             </div>
 
         </div>
+
+        <div class="containerDigimon" id="containerDigimon">
+
+            <!-- ABA DIGIMON -->
+            <div class="digimonBackground aba ativaConteudo" id="abaDigimon">
+
+                <div class="infoDigimon" id="infoDigimon">
+
+                    <div class="imagem">
+
+                        <span id="numeroDigimon">83</span>
+
+                        <div class="fotoDigimon" id="fotoDigimon"></div>
+
+                    </div>
+
+                    <div class="atributos">
+
+                        <h3 id="nomeDigimon">Tailmon</h3>
+
+                        <p>
+                            <span>Level: </span>
+                            <span id="level">adultChild</span>
+                        </p>
+
+                        <p>
+                            <span>Attributes: </span>
+                            <span id="attributes">freeVaccine</span>
+                        </p>
+
+                        <p>
+                            <span>Type: </span>
+                            <span id="type">Holy Beast</span>
+                        </p>
+
+                        <p>
+                            <span>Release: </span>
+                            <span id="release">1998</span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ABA FIELDS -->
+            <div class="digimonBackground aba" id="abaFields">
+
+                <div class="fieldsContainer" id="fieldsContainer"></div>
+
+            </div>
+
+            <!-- ABA DESCRIÇÃO -->
+            <div class="digimonBackground aba" id="abaDescricao">
+
+                <div class="descricaoContainer">
+
+                    <h2>Descrição</h2>
+
+                    <p id="textoDescricao"></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </main>
 
     <footer></footer>
