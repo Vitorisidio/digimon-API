@@ -210,3 +210,91 @@ button {
   line-height: 30px;
   font-size: 16px;
 }
+
+@media (max-width: 480px) {
+
+  .cabecalho {
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .cabecalho img {
+    width: 45px;
+    padding-right: 20px;
+  }
+
+  .inputbox {
+    margin-right: 0;
+    padding: 0 20px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .containerSecao {
+    padding-right: 0;
+    gap: 10px;
+  }
+
+  .secao {
+    width: 100px;
+    margin-right: 0;
+  }
+
+  .containerDigimon {
+    margin-right: 0;
+    padding: 0 20px;
+  }
+
+  .digimonBackground {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .infoDigimon {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagem {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .fotoDigimon {
+    width: 180px;
+    height: 180px;
+  }
+
+  .atributos {
+    margin-top: 30px;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .atributos h3 {
+    font-size: 28px;
+  }
+
+  .fieldsContainer {
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .descricaoContainer h2 {
+    font-size: 32px;
+  }
+
+  .descricaoContainer p {
+    width: 100%;
+    line-height: 26px;
+    font-size: 15px;
+    padding: 0 10px;
+  }
+}
